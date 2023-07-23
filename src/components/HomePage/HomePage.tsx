@@ -73,7 +73,7 @@ function HomePage() {
           image: Assets.EXPRESS_ICON,
         },
         {
-          name: "Amazon Web Service",
+          name: "AWS",
           image: Assets.AWS_ICON,
         },
       ],

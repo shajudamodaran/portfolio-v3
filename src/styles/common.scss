@@ -402,7 +402,7 @@ body {
     gap: 2.5rem;
 
     @media screen and (max-width: $small) {
-      gap: 1rem;
+      gap: 2rem;
     }
 
     .set-row {
@@ -431,6 +431,7 @@ body {
         @media screen and (max-width: $small) {
           svg {
             width: 40px;
+            height: 40px;
           }
         }
 
