@@ -3,6 +3,7 @@ import { Assets } from "../../Assets/Icons";
 import Projects from "../Projects/Projects";
 import Footer from "../Footer/Footer";
 import MyJourney from "../MyJourney/MyJourney";
+import ReactTypingEffect from 'react-typing-effect';
 
 function HomePage() {
   const services = [
@@ -99,7 +100,15 @@ function HomePage() {
         <section className="banner">
           <div className="banner-name-wrap">
             <label>Hello, i am</label>
-            <h2>{`< Shaju PD />`}</h2>
+            <h2>
+              {`<`}
+              <ReactTypingEffect
+              speed={200}
+              typingDelay={1000}
+              eraseDelay={300000}
+               text={["Shaju PD"]} />
+              {`/>`}
+            </h2>
             <h5>MERN Stack Developer</h5>
             <div className="count-wrap">
               <div>
@@ -183,7 +192,7 @@ function HomePage() {
 
       <Projects />
 
-      <MyJourney/>
+      <MyJourney />
 
       <Footer />
     </div>
