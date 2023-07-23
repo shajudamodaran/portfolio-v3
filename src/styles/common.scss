@@ -17,9 +17,6 @@ body {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-
-
-
 }
 
 .index-page-header {
@@ -37,7 +34,7 @@ body {
   height: 85px;
   z-index: 100000;
   @media screen and (max-width: $medium) {
-   display: none;
+    display: none;
   }
 
   ul {
@@ -90,21 +87,20 @@ body {
   }
 }
 
-.index-page-header-hidden{
+.index-page-header-hidden {
   height: 0px;
   padding: 0px;
   overflow: hidden;
-  transition-duration: .5s;
+  transition-duration: 0.5s;
 }
 
-.index-page-header-visible{
+.index-page-header-visible {
   height: 85px !important;
   padding: 0px 5%;
 }
 
-.index-page-header-black{
+.index-page-header-black {
   background-color: black !important;
-
 }
 
 .home-page-container {
@@ -163,7 +159,6 @@ body {
     @media screen and (max-width: $medium) {
       gap: 1vw;
     }
-   
 
     .banner-name-wrap {
       display: flex;
@@ -171,12 +166,11 @@ body {
       align-items: flex-start;
       justify-content: center;
 
-      
-    @media screen and (max-width: $small) {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
+      @media screen and (max-width: $small) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
 
       h2,
       h5,
@@ -194,7 +188,7 @@ body {
         margin-bottom: 2vh;
         @media screen and (max-width: $medium) {
           font-size: 27px;
-          margin-bottom: .5vh;
+          margin-bottom: 0.5vh;
         }
       }
 
@@ -224,7 +218,7 @@ body {
 
         @media screen and (max-width: $medium) {
           font-size: 27px;
-          margin-bottom: .5vh;
+          margin-bottom: 0.5vh;
         }
       }
 
@@ -290,15 +284,25 @@ body {
 
   .about-me {
     min-height: calc(100vh - 85px);
-    padding: 0px 8vw;
+    padding: 0px 12vw;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 8vw;
+
+    @media screen and (max-width: $small) {
+      flex-direction: column;
+      justify-content: center;
+      gap: 1vw;
+    }
 
     .content-area {
       max-width: 50%;
+
+      @media screen and (max-width: $medium) {
+        max-width: 100%;
+      }
 
       p {
         color: #c5c5c5;
@@ -320,6 +324,11 @@ body {
       align-items: flex-start;
       justify-content: flex-start;
       gap: 8px;
+
+      @media screen and (max-width: $small) {
+        width: 100%;
+        margin-bottom: 1rem;
+      }
 
       .service {
         border-radius: 10px;
@@ -392,6 +401,10 @@ body {
     justify-content: flex-start;
     gap: 2.5rem;
 
+    @media screen and (max-width: $small) {
+      gap: 1rem;
+    }
+
     .set-row {
       display: flex;
       flex-direction: column;
@@ -415,6 +428,12 @@ body {
         flex-wrap: wrap;
         gap: 25px;
 
+        @media screen and (max-width: $small) {
+          svg {
+            width: 40px;
+          }
+        }
+
         div {
           display: flex;
           flex-direction: column;
@@ -431,6 +450,10 @@ body {
           font-weight: 500;
           line-height: normal;
           letter-spacing: 1.04px;
+
+          @media screen and (max-width: $small) {
+            font-size: 14px;
+          }
         }
       }
     }
@@ -445,10 +468,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
- 
 
   .section-head {
-  
   }
 
   .stack-list-wrap {
@@ -462,7 +483,7 @@ body {
       padding-top: 1rem;
     }
     .stack-list {
-      margin-top: .5rem;
+      margin-top: 0.5rem;
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -577,6 +598,20 @@ body {
   //   // transform: scale(1.5);
   //   transition-duration: 0.5s;
   // }
+
+  @media screen and (max-width: $small) {
+    .slick-next {
+      margin-right: 20px;
+    }
+
+    .slick-prev {
+      margin-left: 20px;
+    }
+
+    .slick-disabled {
+      display: none;
+    }
+  }
 }
 
 .journey-container {
@@ -600,12 +635,16 @@ body {
     font-weight: 400 !important;
     line-height: 24px !important; /* 165.217% */
     margin-bottom: 1.5rem !important;
+    @media screen and (max-width: $small) {
+      font-size: 14px !important;
+    }
   }
 }
 
 .vertical-timeline-element-content {
   background-color: transparent !important;
   padding-top: 0px !important;
+ 
 }
 
 .vertical-timeline-element-icon {
@@ -616,6 +655,9 @@ body {
   width: 20px !important;
   margin-left: -10px !important;
   top: 19px !important;
+  @media screen and (max-width: $small) {
+    left: 19px !important;
+  }
 }
 .vertical-timeline-element-content-arrow {
   display: none !important;
@@ -631,6 +673,10 @@ body {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+
+  @media screen and (max-width: $small) {
+    font-size: 20px;
+  }
 }
 
 .vertical-timeline-element-date {
@@ -641,6 +687,10 @@ body {
   font-weight: 900 !important;
   line-height: normal !important;
   padding: 0px !important;
+  @media screen and (max-width: $small) {
+    font-size: 20px !important;
+    margin-top: 1rem;
+  }
 }
 
 .project-card-wrap {
@@ -654,6 +704,11 @@ body {
   box-sizing: border-box;
   padding: 2rem;
   gap: 2rem;
+
+  @media screen and (max-width: $small) {
+    flex-direction: column;
+  }
+
   .project-banner {
     width: 50%;
     object-fit: contain;
@@ -666,16 +721,15 @@ body {
     justify-content: flex-start;
     height: 100%;
     box-sizing: border-box;
-    
 
     h2 {
       margin: 0px;
     }
 
-    p{
+    p {
       font-family: "Roboto";
       font-weight: lighter;
-      letter-spacing: .5px;
+      letter-spacing: 0.5px;
       line-height: 25px;
     }
 
