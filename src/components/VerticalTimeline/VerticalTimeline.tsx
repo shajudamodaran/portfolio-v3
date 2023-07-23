@@ -12,19 +12,28 @@ function VerticalTimelineComponent() {
       title: "Software Engineer",
       subTitle: "",
       content:
-        "Experienced web developer proficient in MERN stack, React, Node.js, and Express. Skilled in deploying and hosting applications on AWS for enhanced scalability. Proficient in WordPress for landing page creation and Gatsby for building static sites, with a strong focus on troubleshooting and delivering high-quality results.",
+        "Experienced MERN stack developer with a focus on React and Node.js, proficient in AWS deployment. Skilled in building web applications, creating landing pages with WordPress, and developing static sites using Gatsby. Dedicated to delivering high-quality, user-friendly solutions tailored to client needs.",
       icon: "",
-      date: "July 2023",
+      date: "Aug-2020 - current",
       organization: "Webdura Technologies",
     },
     {
-      title: "Software Engineer",
+      title: "MIS Executive",
       subTitle: "",
       content:
-        "Experienced web developer proficient in MERN stack, React, Node.js, and Express. Skilled in deploying and hosting applications on AWS for enhanced scalability. Proficient in WordPress for landing page creation and Gatsby for building static sites, with a strong focus on troubleshooting and delivering high-quality results.",
+        "An MIS executive in DDUGKY is responsible for managing and analyzing data related to the program's operations and outcomes, and providing insights and recommendations to support decision-making and improve performance.",
       icon: "",
-      date: "July 2023",
-      organization: "Webdura Technologies",
+      date: "Dec 2020 - Aug 2021",
+      organization: "Rajadhani institute Eng & Tec",
+    },
+    {
+      title: "Project Development Officer",
+      subTitle: "",
+      content:
+        " Overseeing and coordinating various aspects of the projects, including planning, implementation, monitoring, and evaluation, as well as ensuring compliance with the relevant regulations and guidelines.",
+      icon: "",
+      date: "May 2018 - Dec 2020",
+      organization: "IIB Education Pvt.Ltd",
     },
   ];
 

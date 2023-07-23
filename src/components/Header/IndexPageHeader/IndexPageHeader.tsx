@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Assets } from "../../../Assets/Icons";
 import { useScroll } from "../../ScrollIdentifier/ScrillIdentifier";
+import { Popover } from "antd";
 
 function IndexPageHeader() {
   const { scrollAmount, scrollDirection } = useScroll();
@@ -24,7 +25,12 @@ function IndexPageHeader() {
     return classes.join(" ");
   };
 
-
+  const content = (
+    <div>
+      <p>contact.shajupd@gmail.com</p>
+      <p>+91 9074810177</p>
+    </div>
+  );
 
   return (
     <div className={`index-page-header ${getHeaderClassName()}`}>
@@ -32,25 +38,33 @@ function IndexPageHeader() {
         <span>
           SHAJU <span>PD</span>
         </span>
-        <ul>
+        {/* <ul>
           <li>About</li>
           <li>Skills</li>
           <li>Projects</li>
-        </ul>
+        </ul> */}
       </div>
       <div className="nav-area">
         <ul>
           <li>
-            {Assets.LINKEDIN_ICON()} <span>Linkedin</span>
+            {Assets.LINKEDIN_ICON()}{" "}
+            <span>
+              <a href="https://www.linkedin.com/in/shajupd">Linkedin</a>
+            </span>
           </li>
           <li>
-            {Assets.GITHUB_ICON()} <span>Github</span>
+            {Assets.GITHUB_ICON()}{" "}
+            <span>
+              <a href="https://github.com/shajudamodaran">Github</a>
+            </span>
           </li>
         </ul>
 
-        <button className="button">
-          <div>{Assets.CONTACT_ICON()}</div> Contact me
-        </button>
+        <Popover content={content} title="" trigger="click">
+          <button className="button">
+            <div>{Assets.CONTACT_ICON()}</div> Contact me
+          </button>
+        </Popover>
       </div>
     </div>
   );

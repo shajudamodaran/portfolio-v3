@@ -3,7 +3,7 @@ import { Assets } from "../../Assets/Icons";
 import Projects from "../Projects/Projects";
 import Footer from "../Footer/Footer";
 import MyJourney from "../MyJourney/MyJourney";
-import ReactTypingEffect from 'react-typing-effect';
+import ReactTypingEffect from "react-typing-effect";
 
 function HomePage() {
   const services = [
@@ -103,10 +103,11 @@ function HomePage() {
             <h2>
               {`<`}
               <ReactTypingEffect
-              speed={200}
-              typingDelay={1000}
-              eraseDelay={300000}
-               text={["Shaju PD"]} />
+                speed={200}
+                typingDelay={1000}
+                eraseDelay={300000}
+                text={["Shaju PD"]}
+              />
               {`/>`}
             </h2>
             <h5>MERN Stack Developer</h5>
@@ -142,13 +143,11 @@ function HomePage() {
               aboutMe<span>( )</span>
             </h2>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release.
+              I am a MERN stack developer with two years of experience in
+              building web applications. I have expertise in technologies like
+              React, Node.js, Express, MongoDB, and AWS. I can work on both the
+              front-end and back-end, allowing me to create effective and
+              scalable web solutions that meet clients' requirements.
             </p>
           </div>
 

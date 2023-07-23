@@ -8,7 +8,7 @@ function Seo({ children }: PropsType) {
   return (
     <ScrollProvider>
       <div className="page-container">
-        <Helmet title="foo bar" defer={false}>
+        <Helmet title="Shaju PD - MERN stack developer" defer={false}>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
             rel="preconnect"

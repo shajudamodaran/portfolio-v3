@@ -5,24 +5,15 @@ function ProjectCard(props: any) {
     <div className="project-card-wrap">
       <img
         className="project-banner"
-        src="https://ik.imagekit.io/hxburx5mi/Portfolio_assets/jj.png?updatedAt=1690009225066"
-        alt=""
+        src={props?.data?.cover}
+        alt={props?.data?.name}
       />
 
       <div className="project-details-wrap">
-        <h2>joinjobconsultancy.com</h2>
-        <div className="project-hashtags-list">
-          #freelance #landing_page #recruitment #seo
-        </div>
+        <h2>{props?.data?.name}</h2>
+        <div className="project-hashtags-list">{props?.data?.hashtags}</div>
 
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati
-          consectetur ducimus id quaerat explicabo perspiciatis repellendus
-          dignissimos sapiente hic, quo minus voluptate sequi mollitia fuga
-          repudiandae eligendi quam. Dolores pariatur fugit voluptate! Quos
-          aperiam error aliquid temporibus doloribus odio, quis porro, deserunt
-          dolores maxime odit ratione ea earum. Aliquid, laborum.
-        </p>
+        <p>{props?.data?.details}</p>
 
         <div className="stack-list-wrap">
           <span>Stacks</span>
@@ -30,7 +21,7 @@ function ProjectCard(props: any) {
             {props?.data?.stacks.map((stack: any, key: number) => (
               <div className="stack-list-item" key={key}>
                 <img src={stack?.image} alt="" />
-                Gatsby js
+                {stack?.name}
               </div>
             ))}
           </div>

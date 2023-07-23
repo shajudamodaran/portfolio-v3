@@ -442,7 +442,12 @@ export const Assets = {
       "https://ik.imagekit.io/hxburx5mi/Portfolio_assets/express.svg?updatedAt=1690028873764",
     react:
       "https://ik.imagekit.io/hxburx5mi/Portfolio_assets/React.svg?updatedAt=1690028873666",
+    mongodb:
+      "https://ik.imagekit.io/hxburx5mi/Portfolio_assets/mongodb%201.svg?updatedAt=1690117412122",
+    wp: "https://ik.imagekit.io/hxburx5mi/Portfolio_assets/wordpress%201.svg?updatedAt=1690117412109",
   },
+  gmail:"https://ik.imagekit.io/hxburx5mi/Portfolio_assets/gmail.svg?updatedAt=1690124458970",
+  phone:"https://ik.imagekit.io/hxburx5mi/Portfolio_assets/phone.svg?updatedAt=1690124459271",
   bannerImage:
     "https://ik.imagekit.io/hxburx5mi/Portfolio_assets/banner.png?updatedAt=1689432131937",
 };
