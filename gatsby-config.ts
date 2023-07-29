@@ -47,7 +47,36 @@ const config: GatsbyConfig = {
     //     "spaceId": ""
     //   }
     // },
-    "gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-transformer-sharp", "gatsby-plugin-sass", "gatsby-plugin-sitemap", "gatsby-plugin-react-helmet", {
+    "gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-transformer-sharp", "gatsby-plugin-sass" , "gatsby-plugin-react-helmet", 
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        output: `/sitemap.xml`,
+        exclude: ['/exclude-page'],
+        query: `
+          {
+            site {
+              siteMetadata {
+                siteUrl
+              }
+            }
+
+            allSitePage {
+              nodes {
+                path
+              }
+            }
+          }
+        `,
+        resolveSiteUrl: ({ site }:any) => {
+          return site.siteMetadata.siteUrl;
+        },
+        serialize: ({ path }:any) => ({
+          url: path,
+        }),
+      },
+    },
+    {
       resolve: 'gatsby-plugin-manifest',
       options: {
         "icon": "src/images/icon.png"
