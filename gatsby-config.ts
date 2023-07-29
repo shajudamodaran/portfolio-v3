@@ -20,7 +20,7 @@ const config: GatsbyConfig = {
             // false will enable clarity tracking code on production environment only
             enable_on_dev_env: true
           },
-      }
+      },
   //   {
   //   resolve: 'gatsby-source-contentful',
   //   options: {
