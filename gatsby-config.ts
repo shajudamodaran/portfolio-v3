@@ -10,6 +10,17 @@ const config: GatsbyConfig = {
   // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
   plugins: [
+     {
+          resolve: `gatsby-plugin-clarity`,
+          options: {
+            // String value for your clarity project ID
+            clarity_project_id: "i6w4tk1und",
+            // Boolean value for enabling clarity while developing
+            // true will enable clarity tracking code on both development and production environments
+            // false will enable clarity tracking code on production environment only
+            enable_on_dev_env: true
+          },
+      }
   //   {
   //   resolve: 'gatsby-source-contentful',
   //   options: {
