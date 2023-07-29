@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { Assets } from "../../../Assets/Icons";
 import { useScroll } from "../../ScrollIdentifier/ScrillIdentifier";
-import { Popover } from "antd";
+import { Modal, Popover } from "antd";
+import Footer from "../../Footer/Footer";
 
 function IndexPageHeader() {
   const { scrollAmount, scrollDirection } = useScroll();
+  const [isContactModalOpen, setContactModelOpen] = useState(false);
 
   const checkIfHeaderBlack = (): boolean => {
     return scrollAmount >= 350;
@@ -25,10 +27,22 @@ function IndexPageHeader() {
     return classes.join(" ");
   };
 
+  const handleContactModal = (flag: boolean) => {
+    setContactModelOpen(flag);
+  };
+
   const content = (
-    <div>
-      <p>contact.shajupd@gmail.com</p>
-      <p>+91 9074810177</p>
+    <div className="contact-list-wrap">
+      <p>
+        <img src={Assets.gmail} alt="mail_icon" />
+        <span>contact.shajupd@gmail.com</span>
+        <img className="clipboard-icon" src={Assets.copy} alt="copy_icon" />
+      </p>
+      <p>
+        <img src={Assets.phone} alt="phone_icon" />
+        <span>+91 9074810177</span>
+        <img className="clipboard-icon" src={Assets.copy} alt="copy_icon" />
+      </p>
     </div>
   );
 
@@ -49,23 +63,43 @@ function IndexPageHeader() {
           <li>
             {Assets.LINKEDIN_ICON()}{" "}
             <span>
-              <a href="https://www.linkedin.com/in/shajupd">Linkedin</a>
+              <a target="_blank" href="https://www.linkedin.com/in/shajupd">
+                Linkedin
+              </a>
             </span>
           </li>
           <li>
             {Assets.GITHUB_ICON()}{" "}
             <span>
-              <a href="https://github.com/shajudamodaran">Github</a>
+              <a target="_blank" href="https://github.com/shajudamodaran">
+                Github
+              </a>
             </span>
           </li>
         </ul>
 
-        <Popover content={content} title="" trigger="click">
-          <button className="button">
-            <div>{Assets.CONTACT_ICON()}</div> Contact me
-          </button>
-        </Popover>
+        {/* <Popover content={content} title="" trigger="click"> */}
+        <button
+          className="button"
+          onClick={() => {
+            handleContactModal(true);
+          }}
+        >
+          <div>{Assets.CONTACT_ICON()}</div> Contact me
+        </button>
+        {/* </Popover> */}
       </div>
+
+      <Modal
+        open={isContactModalOpen}
+        onCancel={() => {
+          handleContactModal(false);
+        }}
+        footer={false}
+        className="contact-modal"
+      >
+        <Footer />
+      </Modal>
     </div>
   );
 }

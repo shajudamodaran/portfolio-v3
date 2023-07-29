@@ -404,11 +404,47 @@ function INSTA_FOOTER() {
   );
 }
 
-// function HTML() {
-//     return (
+function WHATSAPP_FOOTER() {
+  return (
+    <svg
+      width="45"
+      height="45"
+      viewBox="0 0 48 48"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g clip-path="url(#clip0_76_8)">
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M23.993 0C10.763 0 2.72941e-05 10.765 2.72941e-05 24C-0.00762234 29.0551 1.59287 33.9816 4.57003 38.067L1.58003 46.984L10.804 44.036C14.7179 46.6303 19.3114 48.0095 24.007 48C37.237 48 48 37.234 48 24C48 10.766 37.238 0 24.007 0H23.993ZM17.293 12.19C16.827 11.076 16.475 11.034 15.77 11.005C15.5024 10.988 15.2342 10.979 14.966 10.978C14.048 10.978 13.089 11.246 12.511 11.838C11.806 12.558 10.057 14.236 10.057 17.679C10.057 21.122 12.567 24.452 12.906 24.918C13.259 25.383 17.801 32.55 24.853 35.471C30.368 37.757 32.005 37.545 33.26 37.277C35.094 36.882 37.393 35.527 37.971 33.891C38.55 32.254 38.55 30.857 38.381 30.561C38.211 30.265 37.745 30.096 37.041 29.743C36.335 29.39 32.907 27.697 32.258 27.471C31.624 27.231 31.018 27.316 30.538 27.993C29.861 28.939 29.198 29.898 28.662 30.476C28.239 30.928 27.547 30.985 26.969 30.744C26.193 30.42 24.021 29.658 21.341 27.274C19.267 25.425 17.857 23.126 17.448 22.434C17.038 21.729 17.406 21.32 17.73 20.939C18.083 20.501 18.421 20.191 18.774 19.782C19.126 19.372 19.324 19.161 19.55 18.682C19.79 18.216 19.62 17.736 19.45 17.382C19.282 17.03 17.871 13.587 17.293 12.191V12.19Z"
+          fill="white"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_76_8">
+          <rect width="48" height="48" fill="white" />
+        </clipPath>
+      </defs>
+    </svg>
+  );
+}
 
-//     )
-// }
+function MAIL_FOOTER() {
+  return (
+    <svg
+      width="45"
+      viewBox="0 0 121 97"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M108.833 0.166504H12.1666C5.49054 0.166504 0.143669 5.5738 0.143669 12.2498L0.083252 84.7498C0.083252 91.4259 5.49054 96.8332 12.1666 96.8332H108.833C115.509 96.8332 120.917 91.4259 120.917 84.7498V12.2498C120.917 5.5738 115.509 0.166504 108.833 0.166504ZM108.833 24.3332L60.4999 54.5415L12.1666 24.3332V12.2498L60.4999 42.4582L108.833 12.2498V24.3332Z"
+        fill="white"
+      />
+    </svg>
+  );
+}
 
 export const Assets = {
   CONTACT_ICON: ContactIcon,
@@ -430,6 +466,8 @@ export const Assets = {
   LINKEDIN_FOOTER_ICON: LINKEDIN_FOOTER,
   TWITTER_FOOTER_ICON: TWITTER_FOOTER,
   INSTA_FOOTER_ICON: INSTA_FOOTER,
+  WHATSAPP_FOOTER_ICON: WHATSAPP_FOOTER,
+  MAIL_FOOTER_ICON: MAIL_FOOTER,
   stacks: {
     js: "https://ik.imagekit.io/hxburx5mi/Portfolio_assets/js.svg?updatedAt=1690028873893",
     ts: "https://ik.imagekit.io/hxburx5mi/Portfolio_assets/ts.svg?updatedAt=1690032368850",
@@ -446,8 +484,11 @@ export const Assets = {
       "https://ik.imagekit.io/hxburx5mi/Portfolio_assets/mongodb%201.svg?updatedAt=1690117412122",
     wp: "https://ik.imagekit.io/hxburx5mi/Portfolio_assets/wordpress%201.svg?updatedAt=1690117412109",
   },
-  gmail:"https://ik.imagekit.io/hxburx5mi/Portfolio_assets/gmail.svg?updatedAt=1690124458970",
-  phone:"https://ik.imagekit.io/hxburx5mi/Portfolio_assets/phone.svg?updatedAt=1690124459271",
+  copy: "https://ik.imagekit.io/hxburx5mi/Portfolio_assets/Copy.svg?updatedAt=1690602090897",
+  gmail:
+    "https://ik.imagekit.io/hxburx5mi/Portfolio_assets/gmail.svg?updatedAt=1690124458970",
+  phone:
+    "https://ik.imagekit.io/hxburx5mi/Portfolio_assets/phone.svg?updatedAt=1690124459271",
   bannerImage:
     "https://ik.imagekit.io/hxburx5mi/Portfolio_assets/banner.png?updatedAt=1689432131937",
 };

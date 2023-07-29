@@ -113,7 +113,7 @@ function HomePage() {
             <h5>MERN Stack Developer</h5>
             <div className="count-wrap">
               <div>
-                <span>2</span>
+                <span>02</span>
                 <p>
                   YEARS OF <br />
                   EXPERIENCE
@@ -121,7 +121,7 @@ function HomePage() {
               </div>
 
               <div>
-                <span>4</span>
+                <span>04</span>
                 <p>
                   PROJECTS COMPLETED
                   <br />

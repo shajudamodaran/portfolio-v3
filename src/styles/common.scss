@@ -84,7 +84,7 @@ body {
     align-items: center;
     justify-content: flex-start;
     gap: 25px;
-    a{
+    a {
       color: inherit;
       text-decoration: none;
     }
@@ -317,22 +317,18 @@ body {
         max-width: 596px;
       }
 
-      
       @media screen and (max-width: $medium) {
         max-width: 100%;
-
       }
 
       @media screen and (max-width: $small) {
-        
-        p{
+        p {
           font-family: "Poppins";
           text-align: justify;
           font-size: 18px;
           line-height: 30x;
         }
       }
-
     }
 
     .visual-area {
@@ -546,6 +542,14 @@ body {
     justify-content: flex-start;
     gap: 1.4rem;
 
+    a {
+      color: white;
+    }
+
+    .footer-dial-icon {
+      width: 30px;
+    }
+
     h3,
     p {
       margin: 0px;
@@ -565,6 +569,13 @@ body {
       font-weight: 300;
       line-height: 18px;
     }
+
+    .footer-contact-wrap {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 5px;
+    }
   }
 
   .social-containet {
@@ -572,7 +583,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    gap: 15px;
+    gap: 22px;
   }
 }
 
@@ -662,7 +673,6 @@ body {
 .vertical-timeline-element-content {
   background-color: transparent !important;
   padding-top: 0px !important;
- 
 }
 
 .vertical-timeline-element-icon {
@@ -788,5 +798,64 @@ body {
 
   span {
     color: #fff;
+  }
+}
+
+.contact-list-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  p {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+    font-size: 15px;
+    margin: 0px;
+    font-weight: 500;
+
+    span {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    img {
+      width: 25px;
+    }
+
+    .clipboard-icon {
+      width: 15px;
+      cursor: pointer;
+    }
+  }
+}
+
+.contact-modal {
+  background-color: #000;
+  border-radius: 10px;
+
+  .ant-modal-close-x {
+    path {
+      fill: #fff !important;
+    }
+  }
+
+  .ant-modal-content {
+    background-color: #000;
+  }
+
+  .footer-ccontainer {
+    padding: 1rem !important;
+    height: fit-content !important;
+    max-height: none !important;
+
+    p {
+      max-width: 100% !important;
+    }
   }
 }
