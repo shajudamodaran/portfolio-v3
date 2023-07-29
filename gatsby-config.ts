@@ -10,68 +10,64 @@ const config: GatsbyConfig = {
   // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
   plugins: [
-     {
-          resolve: `gatsby-plugin-clarity`,
-          options: {
-            // String value for your clarity project ID
-            clarity_project_id: "i6w4tk1und",
-            // Boolean value for enabling clarity while developing
-            // true will enable clarity tracking code on both development and production environments
-            // false will enable clarity tracking code on production environment only
-            enable_on_dev_env: true
-          },
+    {
+      resolve: `gatsby-plugin-clarity`,
+      options: {
+        // String value for your clarity project ID
+        clarity_project_id: "i6w4tk1und",
+        // Boolean value for enabling clarity while developing
+        // true will enable clarity tracking code on both development and production environments
+        // false will enable clarity tracking code on production environment only
+        enable_on_dev_env: true
       },
-      {
-        resolve: `gatsby-plugin-google-analytics`,
-        options: {
-          // The property ID; the tracking code won't be generated without it
-          trackingId: "G-S46VYN71L0",
-          // Defines where to place the tracking script - `true` in the head and `false` in the body
-          head: false,
-          // Setting this parameter is optional
-          anonymize: true,
-          // Setting this parameter is also optional
-          respectDNT: true,
-          // Avoids sending pageview hits from custom paths
-          exclude: ["/preview/**", "/do-not-track/me/too/"],
-          // Delays sending pageview hits on route update (in milliseconds)
-          pageTransitionDelay: 0,
-          // Enables Google Optimize using your container Id
-          optimizeId: "YOUR_GOOGLE_OPTIMIZE_TRACKING_ID",
-          // Enables Google Optimize Experiment ID
-          experimentId: "YOUR_GOOGLE_EXPERIMENT_ID",
-          // Set Variation ID. 0 for original 1,2,3....
-          variationId: "YOUR_GOOGLE_OPTIMIZE_VARIATION_ID",
-          // Defers execution of google analytics script after page load
-          defer: false,
-          // Any additional optional fields
-          sampleRate: 5,
-          siteSpeedSampleRate: 10,
-          cookieDomain: "codewithshaju.com",
-          // defaults to false
-          enableWebVitalsTracking: true,
-        }
-      },
-  //   {
-  //   resolve: 'gatsby-source-contentful',
-  //   options: {
-  //     "accessToken": "",
-  //     "spaceId": ""
-  //   }
-  // },
-   "gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-transformer-sharp", "gatsby-plugin-sass", "gatsby-plugin-sitemap","gatsby-plugin-react-helmet", {
-    resolve: 'gatsby-plugin-manifest',
-    options: {
-      "icon": "src/images/icon.png"
-    }
-  }, {
-    resolve: 'gatsby-source-filesystem',
-    options: {
-      "name": "images",
-      "path": "./src/images/"
     },
-    __key: "images"
-  }]
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        // You can add multiple tracking ids and a pageview event will be fired for all of them.
+        trackingIds: [
+          "G-S46VYN71L0", // Google Analytics / GA
+
+        ],
+        // This object gets passed directly to the gtag config command
+        // This config will be shared across all trackingIds
+        gtagConfig: {
+          optimize_id: "OPT_CONTAINER_ID",
+          anonymize_ip: true,
+          cookie_expires: 0,
+        },
+        // This object is used for configuration specific to this plugin
+        pluginConfig: {
+          // Puts tracking script in the head instead of the body
+          head: true,
+  
+          // Defaults to https://www.googletagmanager.com
+          origin: "https://www.codewithshaju.com",
+          // Delays processing pageview events on route update (in milliseconds)
+          delayOnRouteUpdate: 0,
+        },
+      },
+    },
+    //   {
+    //   resolve: 'gatsby-source-contentful',
+    //   options: {
+    //     "accessToken": "",
+    //     "spaceId": ""
+    //   }
+    // },
+    "gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-transformer-sharp", "gatsby-plugin-sass", "gatsby-plugin-sitemap", "gatsby-plugin-react-helmet", {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        "icon": "src/images/icon.png"
+      }
+    }, {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        "name": "images",
+        "path": "./src/images/"
+      },
+      __key: "images"
+    }]
 };
 
 export default config;
