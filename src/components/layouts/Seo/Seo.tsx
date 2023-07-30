@@ -28,21 +28,21 @@ function Seo({ children }: PropsType) {
           <title>MERN Stack Development Services | Shaju PD</title>
           <meta
             name="description"
-            content="We offer MERN stack development services to create static websites and custom web applications tailored to your business needs."
+            content="MERN stack developer to create static websites and custom web applications tailored to your business needs."
           />
           <meta
             name="keywords"
-            content="MERN stack, web development, static websites, custom web applications, business solutions"
+            content="MERN stack, web developer, static websites, custom web applications, business solutions"
           />
           <meta name="author" content="Shaju PD" />
           <link rel="canonical" href="https://codewithshaju.com" />
           <meta
             property="og:title"
-            content="MERN Stack Development Services | Shaju PD"
+            content="MERN Stack Developer | Shaju PD"
           />
           <meta
             property="og:description"
-            content="MERN stack development services to create static websites and custom web applications tailored to your business needs."
+            content="MERN stack developer to create static websites and custom web applications tailored to your business needs."
           />
           <meta
             property="og:image"
