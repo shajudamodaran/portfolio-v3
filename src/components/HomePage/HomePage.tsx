@@ -49,6 +49,10 @@ function HomePage() {
           image: Assets.BOOTSTRAT_ICON,
         },
         {
+          name: "Tailwind CSS",
+          image: Assets.TAILWIND_ICON,
+        },
+        {
           name: "React.Js",
           image: Assets.REACT_ICON,
         },
@@ -113,21 +117,21 @@ function HomePage() {
             <h5>MERN Stack Developer</h5>
             <div className="count-wrap">
               <div>
-                <span>02</span>
+                <span>03</span>
                 <p>
                   YEARS OF <br />
                   EXPERIENCE
                 </p>
               </div>
 
-              <div>
+              {/* <div>
                 <span>04</span>
                 <p>
                   PROJECTS COMPLETED
                   <br />
                   AS A FREELANCER
                 </p>
-              </div>
+              </div> */}
             </div>
           </div>
           <img

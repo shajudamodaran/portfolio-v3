@@ -465,6 +465,23 @@ function ClipBoardIcon() {
   );
 }
 
+export const TailwindIcon = () => {
+  return (
+    <svg
+      width="65"
+      height="65"
+      viewBox="0 0 700 421"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M175 140.5C198.333 47.1666 256.667 0.5 350 0.5C490 0.5 507.5 105.5 577.5 123C624.167 134.667 665 117.167 700 70.5C676.667 163.833 618.333 210.5 525 210.5C385 210.5 367.5 105.5 297.5 88C250.833 76.3333 210 93.8333 175 140.5ZM0 350.5C23.3333 257.167 81.6667 210.5 175 210.5C315 210.5 332.5 315.5 402.5 333C449.167 344.667 490 327.167 525 280.5C501.667 373.833 443.333 420.5 350 420.5C210 420.5 192.5 315.5 122.5 298C75.8333 286.333 35 303.833 0 350.5Z"
+        fill="#44A8B3"
+      />
+    </svg>
+  );
+};
+
 export const Assets = {
   CONTACT_ICON: ContactIcon,
   LINKEDIN_ICON: Linkedin,
@@ -488,6 +505,7 @@ export const Assets = {
   WHATSAPP_FOOTER_ICON: WHATSAPP_FOOTER,
   MAIL_FOOTER_ICON: MAIL_FOOTER,
   CLIPBOARD: ClipBoardIcon,
+  TAILWIND_ICON: TailwindIcon,
   stacks: {
     js: "https://ik.imagekit.io/hxburx5mi/Portfolio_assets/js.svg?updatedAt=1690028873893",
     ts: "https://ik.imagekit.io/hxburx5mi/Portfolio_assets/ts.svg?updatedAt=1690032368850",
